@@ -1,0 +1,195 @@
+html {
+  width: 100%;
+  height:100%;
+}
+
+
+header {
+      display:table;
+      padding:0;
+      margin:0;
+      width: 100%;
+      height: 100vh;
+      background: url("treemount.jpg") no-repeat 50% 50%;
+      background-size: cover;
+      background-attachment:fixed;
+}
+#quote{
+      color:white;
+      display:table-cell;
+      text-align: center;
+      vertical-align: middle;
+      font-family: 'Dk Zealand'
+}
+
+
+
+/*WANT THIS TO EITHER STICK TO SCREEN AND FADE IN POEM AND 
+NEW IMAGE TO TAKE UP ENTIRE SCREEN BAR THE NAV BAR WHICH SHOULD FADE TO BLACK*/
+
+.nav {
+  display:flex;
+  width:100%;
+}
+
+.nav .logo {
+  position:fixed;
+  width:15%;
+  line-height: 3em;  
+  margin-top: 0.1em;
+  margin-left:1em;
+}
+
+.nav .navbar {
+  display: flex;
+  position: fixed;
+  width:80%;
+  margin-left: 20%;
+  justify-content: flex-end;
+  line-height: 2.2em;  
+}
+
+.logo {
+      color: #fff;
+      font-weight: bold;
+      font-size: 2em;
+      letter-spacing: 1px;
+      font-family: 'PT Sans', sans-serif;
+}
+
+.menu {
+      line-height: 2em;
+      list-style: none;
+      font-family: 'Dk Zealand';
+      font-size: 1.1em;
+      letter-spacing: 1px;
+      padding: 0;
+      margin: 0;
+      padding-right: .5em;
+      text-decoration: none;
+}
+
+a:link, a:visited   {
+      text-decoration: none;
+      color:white;
+}
+
+a.link:hover, a.link:active{
+      color: rgba(0,0,0,0.6);
+      text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+      0px -5px 35px rgba(255,255,255,0.3);
+      background-color: grey;
+/*      background-image: url("greentext.jpg");*/
+      -webkit-background-clip: text; 
+      -webkit-text-fill-color: transparent; 
+}
+
+/*PATREON SUPPORT/PAYMENTS*/
+/*FONT OPTIONS
+font-family: 'EB Garamond', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'PT Sans', sans-serif;*/
+
+.patreon  {
+      display:flex;
+      height:15em;
+      background-color: blue;
+      justify-content: center;
+      align-items: baseline;
+      flex-wrap: wrap
+}
+
+.patreon div {
+      box-sizing: border-box;
+      background-color: yellow;
+      width:auto;
+      padding:.5em;
+      justify-content: center;
+      align-items: center;
+      line-height:6em; 
+      margin:auto;
+      font-family: 'EB Garamond', serif
+}
+/*INDEX PAGE ABOVE*/
+.poem {
+
+  }
+
+
+
+/*BLOG*/
+.blog {
+      font-family: "Dk Zealand"
+}
+a:link {
+  color: #fff;
+}
+
+nav ul li {
+      display: inline-block;
+      padding: 16px 40px;
+}
+
+
+
+/*WORKING ON THE PHOTO CONTAINER*/
+
+.container{
+      display: flex;
+      flex-wrap: wrap
+}
+ul{
+      list-style: none;
+}
+.image {
+      height:40vh;
+      flex-grow: 1;
+}
+li:last-child {
+      flex-grow: 10;
+}
+
+img {
+      max-height: 100%;
+      min-width: 100%;
+      object-fit: cover;
+      vertical-align: bottom;
+}
+
+/*// ADVANCED for above basic layout
+
+// Portrait
+
+@media (max-aspect-ratio: 1/1) {
+  li {
+    height: 30vh;
+  }
+}
+
+// Short screens
+
+@media (max-height: 480px) {
+  li {
+    height: 80vh;
+  }
+}
+
+// Smaller screens in portrait
+
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+  ul {
+    flex-direction: row;
+  }
+
+  li {
+    height: auto;
+    width: 100%;
+  }
+  img {
+    width: 100%;
+    max-height: 75vh;
+    min-width: 0;
+  }
+}*/
+
+

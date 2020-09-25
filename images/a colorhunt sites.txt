@@ -1,0 +1,9 @@
+https://colorhunt.co/palette/202087
+https://uicookies.com/css-hover-effects/
+https://ianlunn.github.io/Hover/
+https://medium.com/developers-tomorrow/javascript-best-practice-intersection-observer-api-for-lazy-loading-26483b8a3d55
+https://www.sitepoint.com/five-techniques-lazy-load-images-website-performance/
+
+https://speckyboy.com/page-transition-effects/
+https://blog.logrocket.com/advanced-effects-with-css-background-blend-modes-4b750198522a/
+          This is for pencil sketch or night vision

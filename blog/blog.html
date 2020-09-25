@@ -1,40 +1,139 @@
+  
 <!DOCTYPE html>
 <html>
 <head>
     <title>Blog</title>
 <link rel="stylesheet" href="../styles/styles.css">
+<link rel="stylesheet" href="../styles/nav-bar.css">
+<link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
 </head>
 <body>
+<!-- LOGO -->
+<div class="logoSlider"><img id="logoHidden" src="../images/logo/1logo.png"></div>
+<div class="logo"><img src="../images/logo/7logo.png"></div>
+<!-- ======================================================================= -->
+<!-- NAVIGATION BARS -->
+<!-- SLIDING SCROLLING NAVIGATION BAR -->
+<nav id="navSlider"class="navbarSlider">
+    <div class="navigatingTop"><h2></h2><a class="hvr-overline-from-center" href="#">TOP</a></h2></div>          
+    <div class="scrollBar">
+        <ul class="scrollLinks">
+            <li><a href="#blog1">2020</a></li>
+            <li><a href="#blog2">Belly Blog</a></li>
+            <li><a href="#blog3">Landscape</a></li>
+            <li><a href="#4">Malta</a></li>
+            <li><a href="#5">New Zealand</a></li>
+        </ul>
+    </div> 
+    <div class="togg">   
+        <input type="checkbox" id="check">
+            <label id="toggleSlider" for="check">
+                    <div class="btn1" id="btn1">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    </div>
+            </label>
+                <ul class="menuSlider">
+                    <li class = "hvr-sweep-to-right"><a class="link" href="../index.html">Home</a></li>
+                    <li class = "hvr-sweep-to-right"><a class="link" href="#">Merch</a></li>
+                    <li class = "hvr-sweep-to-right"><a class="link" href="about.html">About</a></li>
+                    <li class = "hvr-sweep-to-right"><a class="link" href="#">Contact</a></li>
+                </ul>
+    </div>
+</nav>
+<!-- ================================================================================ -->
+<!-- STATIC BAR -->
+<nav class="navbar">
+    <input type="checkbox" id="check">
+        <label id="toggle" for="check">
+            <div class="btn1" id="btn1">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+    </label>
+    <ul class="menu">
+        <li><a class="link" href="../index.html">Home</a></li>
+        <li><a class="link" href="#">Merch</a></li>
+        <li><a class="link" href="about.html">About</a></li>
+        <li><a class="link" href="#">Contact</a></li>
+    </ul>
+</nav>
+<!-- ================================================================================ -->
+<!-- SMOOTHSCROLL BAR -->
+<div class="topNavImage"></div>
+<div class="topBarLinks">
+    <ul class="scrollLinks">
+        <li><a href="#blog1">2020</a></li>
+        <li><a href="#blog2">Belly Blog</a></li>
+        <li><a href="#blog3">Landscape</a></li>
+        <li><a href="#4">Malta</a></li>
+        <li><a href="#5">New Zealand</a></li>
+    </ul>
+</div>
+<!-- ================================================================================ -->
+<!-- ================================================================================ -->
+<!-- BLOG 2020 -->
+<div class="blog" id="blog1">
+    <div class="grid-gallery">
+        <div class="grid-item grid-text blog-head">
+            <div class="titleBlog"><h2>2020</h2></div>
+        </div>
+            <div class="grid-item large0-0"><img data-src="../images/2020/covid.jpg" /> </div>
+            <div class="grid-item med1-0"><img data-src="../images/2020/udemy.png" /></div>
+            <div class="grid-item med2-0"><img data-src="../images//2020/blm2.png" /></div>
+            <div class="grid-item long3-0"><img data-src="../images//2020/trump.jpg" /></div>
+            <div class="grid-item large4-0"><img data-src="../images//2020/blm1.png" /></div>
+            <div class="grid-item med5-0"><img data-src="../images//2020/ufc.jpeg" /></div>
+    </div>
+</div>
+<!-- ================================================================================ -->
+<!-- BELLY BLOG   -->
+<div class="blog" id="blog2">
+    <div class="grid-gallery">
+        <div class="grid-item grid-text blog-head">
+            <div class="titleBlog"><h2>Belly Blog</h2></div>
+        </div>
+            <div class="grid-item large1"><img data-src="../images/bella/beachbella.jpg" /> </div>
+            <div class="grid-item small2"><img data-src="../images/bella/sleepbella.jpg" /></div>
+            <div class="grid-item small3"><img data-src="../images/bella/shoe.jpeg" /></div>
+            <div class="grid-item landscape4"><img data-src="../images/bella/gym.jpeg" /></div>
+            <div class="grid-item med5"><img data-src="../images/bella/socksbella.jpg" /></div>
+            <div class="grid-item med6"><img data-src="../images/bella/bellytoy.jpg" /></div>
+            <div class="grid-item small7"><img data-src="../images/bella/bag.jpeg" /></div>
+            <div class="grid-item large8"><img data-src="../images/bella/nowalkbella.jpg" /></div>
+            <div class="grid-item med9"><img data-src="../images/bella/dressedbella.jpg" /></div>
+            <div class="grid-item portrait10"><img data-src="../images/bella/pose2bella.jpg" /></div>
+    </div>
+</div>
+<!-- ================================================================================ -->
+<!-- LANDSCAPE BLOG    -->
+<div class="blog" id="blog3">
+    <div class="grid-gallery">
+        <div class="grid-item grid-text blog-head">
+            <div class="titleBlog"><h2>Landscape</h2></div>
+        </div>
+            <div class="grid-item small1-2"><img data-src="../images/colorbeach.jpg" /> </div>
+            <div class="grid-item med2-2"><img data-src="../images/night.jpg" /></div>
+            <div class="grid-item landscape4-2"><img data-src="../images/beach.jpg" /></div>
+            <div class="grid-item landscape5-2"><img data-src="../images/road.jpg" /></div>
+            <div class="grid-item large6-2"><img data-src="../images/lakes.jpg" /></div>
+            <div class="grid-item large7-2"><img data-src="../images/pinklake.jpg" /></div>
+            <div class="grid-item med8-2"><img data-src="../images/river.jpg" /></div>
+            <div class="grid-item landscape9-2"><img data-src="../images/lavender.jpg" /></div>
+            <div class="grid-item landscape10-2"><img data-src="../images/rivers.jpg" /></div>
+    </div>
+</div>
+<!-- ================================================================================ -->
+<!-- OBSERVERS -->
+<div class="blog" id="blog4"></div>
+<div class="blog" id="blog5"></div>
+<div class="blog" id="blog6"></div>
+<div class="blog" id="blog7"></div>
 
-   <!-- NAVIGATION BAR -->
-	<div class="nav">
-		<div class="logo"><a href="#">FTN</a></div>
-		<div>  
-			<nav class="navbar">
-				<ul class="menu">
-				<li><a class="link" href="../index.html">Index</a></li>
-				<li><a class="link" href="#">Merch</a></li>
-				<li><a class="link" href="about.html">About</a></li>
-				<li><a class="link" href="#">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-			
-	</div> 
- 
-	<div class="grid-gallery">
-		<div class="grid-item grid-text date-place"><h3>Blog Date</h3></div>
-		<div class="grid-item i1"><img src="../styles/beach.jpg" /> </div>
-		<div class="grid-item i2"><img src="../styles/colorbeach.jpg" /></div>
-		<div class="grid-item i3"><img src="../styles/grass.jpg" /></div>
-		<div class="grid-item i4"><img src="../styles/mountains.jpg" /></div>
-		<div class="grid-item i5"><img src="../styles/palms.jpg" /></div>
-		<div class="grid-item i6"><img src="../styles/beach.jpg" /></div>
-		<div class="grid-item i7"><img src="../styles/colorbeach.jpg" /></div>
-		<div class="grid-item i8"><img src="../styles/pinklake.jpg" /></div>
-		<div class="grid-item i9"><img src="../styles/river.jpg" /> </div>
-		<div class="grid-item i10"><img src="../styles/palms.jpg" /> </div>
-	</div>
 
+
+<script type="text/javascript" src="../java/script.js"></script>
 </body>
 </html>

@@ -1,3 +1,5 @@
+// THIS IS A TEST FOR UPDATING THE BRANCH OF A NEW FEATURE ON GIT HUB
+
 // Get the modal
 var modal = document.getElementById('id01');
 

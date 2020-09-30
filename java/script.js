@@ -112,8 +112,7 @@ do {
   x = Math.floor((Math.random() * 7) + 1);
   i = 1;
 } while (i == x);
-  let url = 'file:///C:/Users/tina_/source/repos/House42/images/logo/';
-  // let url = 'C:/Users/user/Documents/Internet of Things/He Koi/images/logo/';
+  let url = '../images/logo/';
   let src = 'logo.png';
   let newLogo = url + x + src;
   currentLogo.src = newLogo;

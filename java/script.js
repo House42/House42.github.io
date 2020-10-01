@@ -1,5 +1,3 @@
-// THIS IS A TEST FOR UPDATING THE BRANCH OF A NEW FEATURE ON GIT HUB
-
 // Get the modal
 var modal = document.getElementById('id01');
 
@@ -9,10 +7,16 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-const logoDisppear = () => {
+const logoDisappear = () => {
   let currentLogo = document.querySelector("div.logoSlider img");
   currentLogo.classList.add("logoChangeBefore");
   currentLogo.classList.remove("logoChangeAfter");
+}
+
+const logoAppear = () => {
+  let currentLogo = document.querySelector("div.logoSlider img");
+  currentLogo.classList.add("logoChangeAfter");
+  currentLogo.classList.remove("logoChangeBefore");
 }
 // NAVBAR HIDDEN ON FIRST SCROLL THEN APPEARS ON WAY UP
 // LOGO APPEARS ON SCROLL
@@ -32,6 +36,7 @@ window.onscroll = scrollFunction = () => {
     document.getElementById("logoHidden").id = "logoSlider";
   }
 }
+
 
 // let prevScrollpos = window.pageYOffset;
 // window.onscroll = scrollFunction = () => {
@@ -101,11 +106,6 @@ targets.forEach(lazyLoad);
 // LOGO CHANGING
 // ===========================================================================
 const sections = document.querySelectorAll('div.blog');
-const logoAppear = () => {
-  let currentLogo = document.querySelector("div.logoSlider img");
-  currentLogo.classList.add("logoChangeAfter");
-  currentLogo.classList.remove("logoChangeBefore");
-}
 
 const changeLogo = () => {
 let currentLogo = document.querySelector("div.logoSlider img");
@@ -132,7 +132,7 @@ let observer = new IntersectionObserver(function (entries, self) {
     console.log(entry);
     if (entry.isIntersecting) { 
         console.log("blog" + entry + entry.target);
-        logoDisppear();  
+        logoDisappear();  
         setTimeout(changeLogo,500);
         setTimeout(logoAppear,500);
     }

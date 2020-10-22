@@ -17,27 +17,6 @@ body{
       transition: .3s ease;
 }
 /*==================================================================*/
-/*NORMAL NAV BAR - hamburger hidden*/
-.navbar {
-    display: flex;
-    width: 100%;
-    height:4em;
-    justify-content: flex-end;
-}
-.navbar #toggle {
-    display: none;
-}
-.menu{
-    display: flex;
-    line-height: 0.5em;
-    list-style: none;
-    font-family: 'Dk Zealand';
-    font-size: 1.3em;
-}
-.menu li{
-    padding: 20px 20px;
-}
-/*==================================================================*/
 /*SLIDER NAV BAR INCLUDING HAMBURGER MENU LOGO AND SCROLL LINKS*/
 #navSlider{
     position: fixed;
@@ -69,14 +48,6 @@ body{
     line-height: 2em;
     padding:0;
 }
-.viewingBlog{
-  font-size:3em;
-  font-color:yellow;
-}
-.viewedBlog{
-  text-decoration: line-through wavy white;
-}
-
 .togg{
   width:20%;
   display: flex;
@@ -114,6 +85,56 @@ body{
 }
 #toggleSlider {
     display: none;
+}
+/*==================================================================*/
+/*NORMAL NAV BAR - hamburger hidden*/
+.navbar {
+    display: flex;
+    width: 100%;
+    height:4em;
+    justify-content: flex-end;
+}
+#toggle {
+    display: none;
+}
+.menu{
+    display: flex;
+    line-height: 0.5em;
+    list-style: none;
+    font-family: 'Dk Zealand';
+    font-size: 1.3em;
+}
+.menu li{
+    padding: 20px 20px;
+}
+/*==================================================================*/
+/* NAVBAR SIZING MEDIUM-SMALL SCREENS. HAMBURGER ACTIVE MENU HIDDEN */
+@media screen and (max-width:768px) {
+    .navbar #toggle {
+        display:block;
+        color: white;
+        background: solid;
+        font-style: normal;
+        font-size: 2em;
+        padding: 10px;
+        padding-right: .8em;
+    }
+    .menu {
+        display: none;
+    }
+    .navbar input:checked ~ .menu {
+        display: block;
+        justify-content: center;
+    }
+    .menu li {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-top: 1px solid #fff;
+   }
+    #toggle {
+        display: none;
+    }
 }
 /*==================================================================*/
 /*UNIVERSAL LINK HOVER & HAMBURGER*/
@@ -175,39 +196,6 @@ a.link:hover, a.link:active {
     transform: rotate(-45deg);
     background-color: white;
     transition: top linear 120ms, transform 120ms ease 200ms;
-}
-/*==================================================================*/
-/* NAVBAR SIZING MEDIUM-SMALL SCREENS. HAMBURGER ACTIVE MENU HIDDEN */
-@media screen and (max-width:768px) {
-    .navbar #toggle {
-        display: inline-block;
-        color: white;
-        background: solid;
-        font-style: normal;
-        font-size: 2em;
-        padding: 10px;
-        padding-right: .8em;
-    }
-
-    .menu li {
-        box-sizing: border-box;
-        display: block;
-        width: 100%;
-        border-top: 1px solid #fff;
-   }
-
-    .menu {
-        display: none;
-    }
-
-    .nav-wrapper input:checked ~ .menu {
-        display: block;
-        justify-content: center;
-    }
-
-    #toggle {
-        display: none;
-    }
 }
 /*==================================================================*/
 /*EFFECT CLASSES*/
